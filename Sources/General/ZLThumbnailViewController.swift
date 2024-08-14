@@ -41,7 +41,7 @@ extension ZLThumbnailViewController {
     }
 }
 
-public class ZLThumbnailViewController: UIViewController {
+class ZLThumbnailViewController: UIViewController {
     private var albumList: ZLAlbumListModel
     
     private var externalNavView: ZLExternalAlbumListNavView?
