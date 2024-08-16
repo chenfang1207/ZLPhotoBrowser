@@ -503,7 +503,7 @@ public class ZLPhotoManager: NSObject {
         }
     }
 
-    class func openPhotoLibrary(sender: UIViewController,  complete: @escaping ((ZLPhotoModel?)->())) {
+    public class func openPhotoLibrary(sender: UIViewController,  complete: @escaping ((ZLPhotoModel?)->())) {
         ZLPhotoManager.getCameraRollAlbum(allowSelectImage: ZLPhotoConfiguration.default().allowSelectImage, allowSelectVideo: ZLPhotoConfiguration.default().allowSelectVideo) { cameraRoll in
             let tvc = ZLThumbnailViewController(albumList: cameraRoll)
             let nav = ZLImageNavController(rootViewController: tvc)
